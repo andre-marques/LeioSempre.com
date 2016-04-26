@@ -37,7 +37,7 @@ public class ConnectionDB {
 	
 	
 	/**
-	 * Constr�i uma conex�o a partir das informa��es necess�rias: host, database, username, password
+	 * Constroi uma conexão a partir das informações necessárias: host, database, username, password
 	 * 
 	 * @param host
 	 * @param database
