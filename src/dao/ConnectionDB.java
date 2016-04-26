@@ -21,17 +21,17 @@ public class ConnectionDB {
 	private String database;
 	
 	/**
-	 * O nome do usu�rio
+	 * O nome do usuário
 	 */
 	private String username;
 	
 	/**
-	 * A senha do usu�rio
+	 * A senha do usuário
 	 */
 	private String password;
 	
 	/**
-	 * A classe de conex�o
+	 * A classe de conexão
 	 */
 	private Connection connection;
 	
@@ -69,7 +69,7 @@ public class ConnectionDB {
         }
         
 	/**
-	 * @return A conex�o gerada
+	 * @return A conexão gerada
 	 */
 	public Connection getConnection() {
             if(this.connection == null){
@@ -82,13 +82,13 @@ public class ConnectionDB {
 	}
 
 	/**
-	 * Fecha a conex�o
+	 * Fecha a conexão
 	 */
 	public void close() {
 		try {
 			this.connection.close();
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro ao fechar conexao.");
+			throw new RuntimeException("Erro ao fechar conexão.");
 		}
 	}
 }
