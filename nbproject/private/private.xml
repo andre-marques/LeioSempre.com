@@ -3,10 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/src/dao/DAO_Autor.java</file>
-            <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/src/control/Control_Genero.java</file>
-            <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/src/control/Control_Livro.java</file>
-            <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/src/control/Control_Autor.java</file>
+            <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/test/control/Control_LivroTest.java</file>
             <file>file:/C:/Users/André%20Marques/Documents/NetBeansProjects/LeioSempre.com/src/dao/ConnectionDB.java</file>
         </group>
     </open-files>
