@@ -17,14 +17,16 @@ public class Control_Livro {
 		dao_Livro = new DAO_Livro();
 	}
 	
-    public void cadastrarLivro(int isbn, String titulo, String editora, int qtd_livro){
+    public boolean cadastrarLivro(int isbn, String titulo, String editora, int qtd_livro){
 
     	Livro l = new Livro(isbn, titulo, editora, qtd_livro);
 		
     	if(dao_Livro.cadastrarLivro(l)){
 			System.out.println("Livro cadastrado como sucesso.");
+                        return true;
 		}else{
 			System.out.println("Erro ao salvar Livro.");
+                        return false;
 		}
 		
     }
@@ -33,7 +35,7 @@ public class Control_Livro {
     	
 		List<Livro> livros = dao_Livro.getAll();
 		
-		this.imprimirLivros(livros);
+		//this.imprimirLivros(livros);
 		
 		return livros;
 
@@ -44,20 +46,22 @@ public class Control_Livro {
 
 		List<Livro> livros = dao_Livro.getPorNomeLivro(titulo);
 		
-		this.imprimirLivros(livros);
+		//this.imprimirLivros(livros);
 		
 		return livros;
 		
     }
     
-    public void alterarLivro(int isbn, String titulo, String editora, int qtd_livro){
+    public boolean alterarLivro(int isbn, String titulo, String editora, int qtd_livro){
     	
     	Livro l = new Livro(isbn, titulo, editora, qtd_livro);
     	
     	if(dao_Livro.alterarLivro(l)){
 			System.out.println("Livro alterado como sucesso.");
+                        return true;
 		}else{
 			System.out.println("Erro ao alterar Livro.");
+                        return false;
 		}
     }
     
